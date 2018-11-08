@@ -1,0 +1,126 @@
+/* File for all CSS that is to be used for the main file. */
+
+/*
+
+Headings
+
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;   
+}
+
+
+body, html {
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 250%;
+    display: inline-block;
+}
+
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 175%;
+}
+
+
+.header {
+    margin: 30px 0;
+}
+
+
+
+/*
+
+Text blocks 
+
+*/
+
+
+
+p {
+    font-size: 80%;
+
+}
+
+
+
+/*
+
+Containers
+
+*/
+
+
+
+.box { /* standard container used for most things */
+
+
+    overflow: hidden;
+    display: block;
+    padding: 0 50px;
+
+}
+
+.img-front-page {
+    height: 400px;
+    width: auto;
+    background-image: url('/imgs/download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.main::before {
+
+    content: '';
+    display: block;
+    margin-top: 75px;
+
+}
+
+
+
+/*
+
+Spacing 
+
+*/
+
+
+
+.services {
+    padding-top: 30px;
+}
+
+
+/*
+
+Text Formatting
+
+*/
+
+
+
+.link {
+
+    
+    float: right;
+    padding: 1.5% 50px;
+    
+}
+
