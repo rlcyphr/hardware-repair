@@ -16,25 +16,28 @@ __dirname = path.resolve(path.dirname('')); // base for the project as a whole.
 __files = __dirname+'/views'; // the base directory for all HTML files
 
 console.log(__dirname,"is the current directory."); 
-app.use(express.static(__dirname + '/public')); // the default path for additional files that are not part of the HTML pages
+app.use(express.static(__dirname + '/public')); 
+// '/public' is the default root path for additional files that are not an HTML page
+// express.js allows the nodejs server to serve requests for pages
 
 
 
-app.get('/', (req, res) => {
+// page gets
 
-    res.send("Hello World!"); // when requests are made to the root path, the server will respond with the string "Hello World!"
-
-})
-
-
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => { // send the main page
 
     res.sendFile(__files+'/index.html');
     // res.sendFile returns this file when the endpoint shown in the parameters is accessed
     // this endpoint is accessed relative to the base directory specified by __dirname
 })
 
+// need pages for signup, log in, help, how to contact, apply for a repair, etc.
 
+
+
+
+
+// app listen instruction
 
 app.listen(port, () => {
 

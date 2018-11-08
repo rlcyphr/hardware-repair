@@ -1,5 +1,7 @@
 /* File for all CSS that is to be used for the main file. */
 
+
+
 /*
 
 Headings
@@ -13,6 +15,9 @@ Headings
     padding: 0;
     text-decoration: none;
     color: black;   
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
 }
 
 
@@ -24,20 +29,23 @@ body, html {
 
 
 h1 {
-    font-family: "Arial", sans-serif;
     font-size: 250%;
     display: inline-block;
+    margin-bottom: 0.25em;
 }
 
 
 h2 {
-    font-family: 'Arial', sans-serif;
     font-size: 175%;
 }
 
-
-.header {
-    margin: 30px 0;
+.header-wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    box-shadow: 0 10px 50px #000;
+    position: relative;
 }
 
 
@@ -52,7 +60,8 @@ Text blocks
 
 p {
     font-size: 80%;
-
+    line-height: 1.7;
+    word-spacing: 0.075em;
 }
 
 
@@ -70,28 +79,29 @@ Containers
 
     overflow: hidden;
     display: block;
-    padding: 0 50px;
+    margin-left: 50%;
+    width: 1280px;
+    transform: translate(-50%);
 
 }
 
+.text-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .img-front-page {
-    height: 400px;
     width: auto;
-    background-image: url('/imgs/download.jpg');
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/download.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
+    margin-bottom: 75px;
+    box-shadow: 0 -15px 40px black inset;
 }
 
-.main::before {
-
-    content: '';
-    display: block;
-    margin-top: 75px;
-
-}
 
 
 
@@ -104,8 +114,9 @@ Spacing
 
 
 .services {
-    padding-top: 30px;
+    padding-top: 50px;
 }
+
 
 
 /*
@@ -118,9 +129,30 @@ Text Formatting
 
 .link {
 
-    
     float: right;
-    padding: 1.5% 50px;
-    
+    margin: 0 50px;
+    margin-top: 1em;
+    font-size: 125%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+    transition: border 0.3s;
+    padding-bottom: 3px;
 }
 
+.blue {
+    color: blue;
+}
+
+
+
+/* 
+
+Interactive page effects
+
+*/
+
+
+
+.link:hover {
+    border-bottom: 1px solid black;
+
+}
