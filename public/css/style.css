@@ -30,8 +30,8 @@ body, html {
 
 h1 {
     font-size: 250%;
-    display: inline-block;
     margin-bottom: 0.25em;
+    float: left;
 }
 
 
@@ -130,9 +130,9 @@ Text Formatting
 .link {
 
     float: right;
-    margin: 0 50px;
-    margin-top: 1em;
-    font-size: 125%;
+    margin: 0 40px;
+    margin-top: 1.25em;
+    font-size: 110%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.0);
     transition: border 0.3s;
     padding-bottom: 3px;
@@ -140,6 +140,70 @@ Text Formatting
 
 .blue {
     color: blue;
+}
+
+
+
+/*
+
+Icons
+
+*/
+
+
+
+.icon {
+
+    background-image: url('/imgs/icons/search.svg');
+    width: 35px;
+    height: 35px;
+    border-bottom: none;
+    transition: transform 0.3s;
+    margin-left: 25px;
+}
+
+.usr-pic {
+    height: 56px;
+    width: 56px;
+    float: right;
+    margin-top: 0.8em;
+    overflow: hidden;
+    background-image: url('/imgs/icons/user-avatar.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+
+
+/*
+
+Search box
+
+*/
+
+
+
+.search-box {
+    /* Box around the input section */
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+.search-box input {
+    /* Input box */
+    padding: 10px;
+    width: 0;
+    transition: all 0.3s;
+}
+
+.search-wrapper {
+    height: auto;
+    width: 300px;
+    float: right;
+    overflow: hidden;
+    margin-top: 1.25em;
 }
 
 
@@ -155,4 +219,32 @@ Interactive page effects
 .link:hover {
     border-bottom: 1px solid black;
 
+}
+
+.icon {
+    float: left;
+}
+
+
+.icon:hover {
+    border-bottom: none;
+    transform: scale(1.25);
+}
+
+
+
+/*
+
+Classes for use with JS 
+
+*/
+
+
+
+.active {
+    width: 100% !important;
+}
+
+.hidden {
+    width: 0 !important;
 }
