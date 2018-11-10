@@ -92,7 +92,7 @@ Containers
 
 .img-front-page {
     width: auto;
-    height: 100%;
+    height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/download.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -102,6 +102,10 @@ Containers
     box-shadow: 0 -15px 40px black inset;
 }
 
+.container {
+    float: right;
+    width: auto;    
+}
 
 
 
@@ -154,13 +158,15 @@ Icons
 
 .icon {
 
+    float: left;
     background-image: url('/imgs/icons/search.svg');
     width: 35px;
     height: 35px;
     border-bottom: none;
     transition: transform 0.3s;
-    margin-left: 25px;
+    margin-left: 30px;
 }
+
 
 .usr-pic {
     height: 56px;
@@ -187,22 +193,20 @@ Search box
 .search-box {
     /* Box around the input section */
     height: 100%;
-    width: 80%;
     float: left;
+    width: 300px;
 }
 
 .search-box input {
     /* Input box */
     padding: 10px;
-    width: 0;
-    transition: all 0.3s;
+    width: 100%;
+    transition: all 0.3s;   
 }
 
 .search-wrapper {
-    height: auto;
-    width: 300px;
-    float: right;
-    overflow: hidden;
+    margin-left: 50px;
+    float: left;
     margin-top: 1.25em;
 }
 
@@ -221,10 +225,6 @@ Interactive page effects
 
 }
 
-.icon {
-    float: left;
-}
-
 
 .icon:hover {
     border-bottom: none;
@@ -240,11 +240,3 @@ Classes for use with JS
 */
 
 
-
-.active {
-    width: 100% !important;
-}
-
-.hidden {
-    width: 0 !important;
-}
