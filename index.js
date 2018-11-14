@@ -31,6 +31,12 @@ app.get('/', (req, res) => { // send the main page
     // this endpoint is accessed relative to the base directory specified by __dirname
 })
 
+app.get('/book', (req, res) => {
+
+    res.sendFile(__files+'/book-repair.html');
+
+})
+
 // need pages for signup, log in, help, how to contact, apply for a repair, etc.
 
 
