@@ -37,6 +37,11 @@ app.get('/book', (req, res) => {
 
 })
 
+app.get('/track', (req, res) => {
+
+    res.sendFile(__files+'/track-item.html');
+})
+
 // need pages for signup, log in, help, how to contact, apply for a repair, etc.
 
 

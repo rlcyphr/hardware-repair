@@ -23,14 +23,27 @@ Buttons
     
 }
 
-.btn-large {
+
+.btn-main {
     padding: 25px 50px;
     box-shadow: 5px 5px 15px black;
+    position: absolute;
+    bottom: 20%;
 }
 
 .btn:hover {
 
     transform: scale(1.125);
+}
+
+.btn-small {
+    padding: none;
+    transform: scale(0.8);
+    font-size: 70%;
+}
+
+.btn-small:hover {
+    transform: scale(1);
 }
 
 
@@ -50,7 +63,7 @@ Containers
     overflow: hidden;
     display: block;
     margin-left: 50%;
-    width: 1280px;
+    width: 1140px;
     transform: translate(-50%);
 
 }
@@ -72,11 +85,6 @@ Containers
     margin-right: 30px;
 }
 
-.container .btn {
-
-    position: absolute;
-    bottom: 120px;
-}
 
 .container.col { /* turn a container into a column */
 
@@ -189,7 +197,7 @@ Input boxes
 .search-box {
     /* Input box */
     padding: 10px;
-    width: 250px;
+    width: 200px;
     transition: all 0.3s;   
 }
 
@@ -202,12 +210,19 @@ Input boxes
 .input-box p {
     padding: 0 25px 0 0;
     line-height: 2.0;
+    float: left;
 }
 
 .input-box input, textarea {
     width: 100%;
     padding: 7.5px;
 
+}
+
+.row-input {
+    width: 300px;
+    padding: 10px;
+    margin: 0 15px;
 }
 
 textarea {
@@ -249,6 +264,10 @@ Miscellaneous Effects
     margin-top: 125px;
 }
 
+.shift {
+    margin-top: 4%;
+}
+
 
 /*
 
@@ -271,12 +290,14 @@ Text blocks
 */
 
 
+p {
 
-.paragraph {
+
     font-size: 80%;
     line-height: 1.7;
     word-spacing: 0.075em;
 }
+
 
 
 .line {
@@ -294,7 +315,7 @@ Text Formatting
 
 .link {
 
-    font-size: 110%;
+    font-size: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.0);
     transition: border 0.3s;
     padding-bottom: 3px;
